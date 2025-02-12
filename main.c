@@ -24,7 +24,7 @@ void print_photo_names(char *folder_path){
         return;
     }
 
-    pritnf("Directory opened successfully\n")
+    printf("Directory opened successfully\n");
     while ((file_entry = readdir(dir)) != NULL){ // Read each entry in the directory stream until all entries are processed
         if(strcmp(file_entry->d_name, ".")) == || strcmp(file_entry->d_name, "..")==0){
             continue;
